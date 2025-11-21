@@ -1,0 +1,47 @@
+# --- Unity Generated Files ---
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# --- VSCode / Rider / IDE ---
+.vscode/
+.vs/
+.idea/
+
+# --- Unity Cache / Auto-generated ---
+MemoryCaptures/
+Assets/AssetStoreTools*
+*.csproj
+*.unityproj
+*.sln
+*.pidb
+*.user
+*.unitypackage
+*.booproj
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
+
+# --- Builds ---
+*.apk
+*.aab
+*.ipa
+*.exe
+
+# --- TextMesh Pro ---
+Assets/TextMesh Pro/Sprites/*.png.meta
+Assets/TextMesh Pro/Sprite Asset Import Settings.asset
+
+# --- Addressables Cache ---
+Assets/AddressableAssetsData/*/*.bin*
+Assets/AddressableAssetsData/*/*.hash
+
+# --- Collaborate (Old Unity) ---
+.collabignore
+
+# --- ProjectSettings Exceptions ---
+ProjectSettings/EditorUserSettings.asset

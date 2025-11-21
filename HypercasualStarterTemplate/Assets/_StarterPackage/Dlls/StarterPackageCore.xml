@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StarterPackageCore</name>
+    </assembly>
+    <members>
+        <member name="T:GameStateMachine">
+            <summary>
+            Manages the current game state and handles transitions between states.
+            </summary>
+        </member>
+        <member name="P:GameStateMachine.Instance">
+            <summary>
+            Singleton instance of the GameStateMachine.
+            </summary>
+        </member>
+        <member name="M:GameStateMachine.SetState(IGameState)">
+            <summary>
+            Switches the current game state to the specified state.
+            Calls OnExit on the previous state and OnEnter on the new state.
+            </summary>
+            <param name="s">The new game state to transition to.</param>
+        </member>
+        <member name="T:ICommand">
+            <summary>
+            Represents a single command step in the loading process.
+            </summary>
+        </member>
+        <member name="P:ICommand.StepName">
+            <summary>
+            Name of the step shown on the loading screen.
+            </summary>
+        </member>
+        <member name="M:ICommand.ExecuteAsync(System.Action{System.Single})">
+            <summary>
+            Executes the command asynchronously with optional progress callback.
+            </summary>
+        </member>
+        <member name="M:ICommand.OnComplete">
+            <summary>
+            Called after the command completes.
+            </summary>
+        </member>
+        <member name="T:IGameState">
+            <summary>
+            Represents a state in the game (e.g., MainMenu, Gameplay).
+            </summary>
+        </member>
+        <member name="M:IGameState.OnEnter">
+            <summary>
+            Called when entering this state.
+            </summary>
+        </member>
+        <member name="M:IGameState.OnExit">
+            <summary>
+            Called when exiting this state.
+            </summary>
+        </member>
+    </members>
+</doc>
